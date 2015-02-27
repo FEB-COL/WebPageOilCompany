@@ -1,0 +1,723 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>CEMENTACIÓN</title>
+<script LANGUAGE="JavaScript">
+var txt="     WELL TESTING          ";
+var espera=200;
+var refresco=null;
+function rotulo_title() {
+        document.title=txt;
+        txt=txt.substring(1,txt.length)+txt.charAt(0);
+        refresco=setTimeout("rotulo_title()",espera);}
+rotulo_title();
+</script>
+<STYLE TYPE="text/css">
+<!--
+a:link, a:visited { color: #545454; text-decoration: none }
+a:hover, a:active { color: #0C0; text-transform: lowercase }
+-->
+</STYLE>
+<style type="text/css">
+<!--
+#apDiv1 {
+	position:absolute;
+	width:200px;
+	height:39px;
+	z-index:1;
+	left: 42px;
+	top: 33px;
+}
+#apDiv2 {
+	position:absolute;
+	width:200px;
+	height:115px;
+	z-index:2;
+	left: 70px;
+	top: 0px;
+}
+#apDiv3 {
+	position:absolute;
+	width:200px;
+	height:115px;
+	z-index:3;
+	left: 75px;
+	top: 63px;
+}
+#apDiv4 {
+	position:absolute;
+	width:76px;
+	height:23px;
+	z-index:4;
+	left: 921px;
+	top: 24px;
+}
+#apDiv4 {
+	font-family: Century Gothic;
+}
+#apDiv5 {
+	position:absolute;
+	width:68px;
+	height:15px;
+	z-index:5;
+	left: 989px;
+	top: 24px;
+}
+#apDiv5 {
+	font-family: Century Gothic;
+}
+#apDiv6 {
+	position:absolute;
+	width:97px;
+	height:15px;
+	z-index:6;
+	left: 1065px;
+	top: 24px;
+}
+#apDiv6 {
+	font-family: Century Gothic;
+}
+#apDiv7 {
+	position:absolute;
+	width:200px;
+	height:30px;
+	z-index:7;
+	left: 43px;
+	top: 380px;
+}
+#apDiv8 {
+	position:absolute;
+	width:200px;
+	height:115px;
+	z-index:8;
+	left: 42px;
+	top: 1067px;
+}
+#apDiv9 {
+	position:absolute;
+	width:200px;
+	height:115px;
+	z-index:9;
+	left: 955px;
+	top: 680px;
+}
+#apDiv10 {
+	position:absolute;
+	width:439px;
+	height:26px;
+	z-index:10;
+	left: 97px;
+	top: 1094px;
+}
+#apDiv10 {
+	font-family: Century Gothic;
+}
+#apDiv10 {
+	color: #808080;
+}
+#apDiv11 {
+	position:absolute;
+	width:24px;
+	height:23px;
+	z-index:11;
+	left: 72px;
+	top: 1090px;
+}
+#apDiv10 font {
+	color: #353535;
+}
+#apDiv12 {
+	position:absolute;
+	width:328px;
+	height:115px;
+	z-index:12;
+	left: 379px;
+	top: 414px;
+}
+#apDiv13 {
+	position:absolute;
+	width:163px;
+	height:115px;
+	z-index:0;
+	left: 157px;
+	top: 442px;
+}
+#apDiv14 {
+	position:absolute;
+	width:266px;
+	height:152px;
+	z-index:14;
+	left: 78px;
+	top: 517px;
+}
+#apDiv14 {
+	font-family: Century Gothic;
+}
+#apDiv14 {
+	color: #808080;
+}
+#apDiv15 {
+	position:absolute;
+	width:47px;
+	height:44px;
+	z-index:15;
+	left: 72px;
+	top: 378px;
+}
+#apDiv16 {
+	position:absolute;
+	width:285px;
+	height:22px;
+	z-index:16;
+	left: 109px;
+	top: 394px;
+}
+#apDiv16 {
+	font-family: Century Gothic;
+}
+#apDiv16 {
+	color: #808080;
+}
+#apDiv17 {
+	position:absolute;
+	width:306px;
+	height:52px;
+	z-index:17;
+	left: 510px;
+	top: 491px;
+}
+#apDiv18 {
+	position:absolute;
+	width:313px;
+	height:42px;
+	z-index:18;
+	left: 68px;
+	top: 700px;
+}
+#apDiv19 {
+	position:absolute;
+	width:200px;
+	height:32px;
+	z-index:19;
+	left: 90px;
+	top: 444px;
+}
+#apDiv20 {
+	position:absolute;
+	width:200px;
+	height:33px;
+	z-index:20;
+	left: 91px;
+	top: 497px;
+}
+#apDiv21 {
+	position:absolute;
+	width:200px;
+	height:30px;
+	z-index:21;
+	left: 90px;
+	top: 650px;
+}
+#apDiv22 {
+	position:absolute;
+	width:200px;
+	height:33px;
+	z-index:22;
+	left: 91px;
+	top: 549px;
+}
+#apDiv23 {
+	position:absolute;
+	width:200px;
+	height:31px;
+	z-index:23;
+	left: 91px;
+	top: 602px;
+}
+#apDiv24 {
+	position:absolute;
+	width:200px;
+	height:115px;
+	z-index:-1;
+	left: 121px;
+	top: 415px;
+}
+#apDiv25 {
+	position:absolute;
+	width:200px;
+	height:25px;
+	z-index:24;
+	left: 938px;
+	top: 1098px;
+}
+#apDiv25 {
+	font-family: Century Gothic;
+}
+#apDiv25 {
+	color: #808080;
+}
+#apDiv26 {
+	position:absolute;
+	width:29px;
+	height:18px;
+	z-index:25;
+	left: 910px;
+	top: 1096px;
+}
+#apDiv10 font {
+	color: #808080;
+}
+#apDiv27 {
+	position:absolute;
+	width:200px;
+	height:53px;
+	z-index:26;
+	left: 12px;
+	top: 119px;
+}
+#apDiv28 {
+	position:absolute;
+	width:200px;
+	height:115px;
+	z-index:26;
+}
+#apDiv17 {
+	font-family: Century Gothic;
+}
+#apDiv17 {
+	color: #808080;
+}
+#apDiv18 {
+	font-family: Century Gothic;
+}
+#apDiv29 {
+	position:absolute;
+	width:200px;
+	height:83px;
+	z-index:26;
+	left: 727px;
+	top: 131px;
+}
+#apDiv30 {
+	position:absolute;
+	width:251px;
+	height:115px;
+	z-index:27;
+	left: 448px;
+	top: 632px;
+}
+#apDiv30 {
+	font-family: Century Gothic;
+}
+#apDiv31 {
+	position:absolute;
+	width:355px;
+	height:115px;
+	z-index:28;
+	left: 103px;
+	top: 829px;
+}
+#apDiv31 {
+	font-family: Century Gothic;
+}
+#apDiv32 {
+	position:absolute;
+	width:200px;
+	height:46px;
+	z-index:29;
+	left: 465px;
+	top: 467px;
+}
+#apDiv33 {
+	position:absolute;
+	width:147px;
+	height:44px;
+	z-index:30;
+	left: 76px;
+	top: 466px;
+}
+#apDiv34 {
+	position:absolute;
+	width:200px;
+	height:115px;
+	z-index:31;
+	left: 232px;
+	top: 726px;
+}
+#apDiv35 {
+	position:absolute;
+	width:21px;
+	height:28px;
+	z-index:32;
+	left: 550px;
+	top: 578px;
+}
+#apDiv36 {
+	position:absolute;
+	width:23px;
+	height:28px;
+	z-index:33;
+	left: 548px;
+	top: 539px;
+}
+#apDiv37 {
+	position:absolute;
+	width:200px;
+	height:35px;
+	z-index:32;
+	left: 64px;
+	top: 751px;
+}
+#apDiv38 {
+	position:absolute;
+	width:20px;
+	height:25px;
+	z-index:33;
+	left: 437px;
+	top: 880px;
+}
+#apDiv39 {
+	position:absolute;
+	width:32px;
+	height:115px;
+	z-index:34;
+	left: 392px;
+	top: 477px;
+}
+#apDiv40 {
+	position:absolute;
+	width:200px;
+	height:115px;
+	z-index:35;
+	left: 76px;
+	top: 758px;
+}
+#apDiv18 ul li {
+	color: #808080;
+}
+#apDiv30 {
+	color: #808080;
+}
+#apDiv41 {
+	position:absolute;
+	width:249px;
+	height:78px;
+	z-index:36;
+	left: 466px;
+	top: 542px;
+}
+#apDiv41 {
+	font-family: Century Gothic;
+}
+#apDiv41 {
+	color: #808080;
+}
+#apDiv42 {
+	position:absolute;
+	width:229px;
+	height:40px;
+	z-index:37;
+	left: 466px;
+	top: 883px;
+}
+#apDiv42 {
+	font-family: Century Gothic;
+}
+#apDiv42 {
+	color: #808080;
+}
+#apDiv43 {
+	position:absolute;
+	width:236px;
+	height:33px;
+	z-index:38;
+	left: 108px;
+	top: 1005px;
+}
+#apDiv43 {
+	font-family: Century Gothic;
+}
+#apDiv43 {
+	color: #808080;
+}
+#apDiv44 {
+	position:absolute;
+	width:204px;
+	height:79px;
+	z-index:39;
+	left: 466px;
+	top: 946px;
+}
+#apDiv44 {
+	font-family: Century Gothic;
+}
+#apDiv44 {
+	color: #808080;
+}
+#apDiv45 {
+	position:absolute;
+	width:21px;
+	height:22px;
+	z-index:40;
+	left: 74px;
+	top: 1005px;
+}
+#apDiv46 {
+	position:absolute;
+	width:20px;
+	height:22px;
+	z-index:41;
+	left: 438px;
+	top: 942px;
+}
+#apDiv47 {
+	position:absolute;
+	width:150px;
+	height:547px;
+	z-index:42;
+	left: 830px;
+	top: 448px;
+}
+#apDiv48 {
+	position:absolute;
+	width:100px;
+	height:115px;
+	z-index:42;
+	left: 831px;
+	top: 427px;
+}
+#apDiv49 {
+	position:absolute;
+	width:200px;
+	height:115px;
+	z-index:42;
+	left: 814px;
+	top: 431px;
+}
+#apDiv50 {
+	position:absolute;
+	width:200px;
+	height:115px;
+	z-index:42;
+	left: 799px;
+	top: 494px;
+}
+#apDiv51 {
+	position:absolute;
+	width:200px;
+	height:39px;
+	z-index:43;
+	left: 75px;
+	top: 945px;
+}
+#apDiv52 {
+	position:absolute;
+	width:33px;
+	height:115px;
+	z-index:44;
+	left: 749px;
+	top: 498px;
+}
+#apDiv53 {
+	position:absolute;
+	width:200px;
+	height:29px;
+	z-index:45;
+	left: 68px;
+	top: 915px;
+}
+-->
+</style>
+<script src="Scripts/swfobject_modified.js" type="text/javascript"></script>
+<script type="text/javascript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+</head>
+
+<body onload="MM_preloadImages('demares web imagenes/img/Sin título-6_f2.png','demares web imagenes/img/Sin título-7_f2.png','demares web imagenes/img/Sin título-8_f2.png','demares web imagenes/img/Sin título-9_f2.png','demares web imagenes/img/Sin título-10_f2.png')">
+<div id="apDiv1"><img src="demares web imagenes/linea-gris-delgada.png" width="1143" height="30" /></div>
+<div id="apDiv2"><img src="demares web imagenes/logo2.png" width="192" height="45" /></div>
+<div id="apDiv3"><img src="demares web imagenes/banner-GENERICO.png" width="1063" height="329" /></div>
+<div id="apDiv4"><font size="2"><A href="index.html">INICIO</A></font></div>
+<div id="apDiv5"><font size="2"><A href="index.html">EMPRESA</A></font></div>
+<div id="apDiv6"><font size="2"><A href="index.html">CONTACTO</A></font></div>
+<div id="apDiv7"><img src="demares web imagenes/linea-gris-delgada.png" width="1143" height="30" /></div>
+<div id="apDiv8"><img src="demares web imagenes/linea-gris-delgada.png" width="1143" height="30" /></div>
+<div id="apDiv10"><font size="2">Grupo demarescsi @ 2010 todos los derechos reservados</font></div>
+<div id="apDiv11"><img src="demares web imagenes/triangulo.png" width="20" height="23" /></div>
+<div id="apDiv13"><img src="demares web imagenes/medio-logo.png" width="154" height="286" /></div>
+<div id="apDiv14">
+<p align="justify"><font color="#666666"> ¿Tiene alguna pregunta o comentario sobre nuestra empresa, productos o servicios?. Por favor elija cuidadosamente entre las siguientes opciones para encontrar la mejor manera de contactarnos. </font>&nbsp;</p>
+</div>
+<div id="apDiv15"><a onclick="return skypeCheck();" href="skype:grupodemarescsi?call" ><img src="demares web imagenes/skype-logo.png" width="30" height="30" /></a></div>
+<div id="apDiv16"><font size="2">Contacte un asesor directamente</font></div>
+<div id="apDiv18">
+  <div align="justify"><img src="demares web imagenes/linea-gris-delgada.png" width="290" height="30" /> </div>
+</div>
+<div id="apDiv25"><font size="2"><a href="index.html">info@grupodemarescsi.co</a></div>
+<div id="apDiv26"><img src="demares web imagenes/triangulo.png" width="20" height="23" /></div>
+<div id="apDiv29"><img src="demares web imagenes/TITULO-CONTACT.png" width="405" height="119" /></div>
+<div id="apDiv30">
+  <div align="justify"> </div>
+<img src="demares web imagenes/MAPA.png" width="276" height="201" /> </div>
+<div id="apDiv32"><font color="#009900" face="Century Gothic" size="6"><B>UBICACIÓN</B></font></div>
+<div id="apDiv33"><font color="#009900" face="Century Gothic" size="6"><B>CONTACTO</B></font></div>
+<div id="apDiv38"><img src="demares web imagenes/triangulo.png" width="20" height="23" /></div>
+<div id="apDiv39"><img src="demares web imagenes/LINEA-VERDE.png" width="18" height="560" /></div>
+<div id="apDiv40"><img src="demares web imagenes/telefono-VERDFE.png" width="267" height="165" /></div>
+<div id="apDiv41">
+  <div align="justify"><font size="2">Puede visitarnos en nuestras instalaciones donde tendremos el gusto de atenderlo personalmente y asi conocer de primera mano nustros productos y servicios</font></div>
+</div>
+<div id="apDiv42"><font size="2"><b>Base de operaciones Bogotá:</b><br />
+Carrera 89 No. 80 - 73, Bodega</font></div>
+<div id="apDiv43"><font size="2"><b>Oficinas Bogotá:</b>Centro Ejecutivo Escala 79<br />
+Kra 16 A No. 79 - 48 of. 502</font></div>
+<div id="apDiv44">
+  <div align="justify"><font size="2"><b>Base de operaciones en Barrancabermeja/Santander:</b>Km 11 vía al Centro<br />
+    Parque Industrial, Las Alpujarras, Barrio: Los Laureles.</font></div>
+</div>
+<div id="apDiv45"><img src="demares web imagenes/triangulo.png" width="20" height="23" /></div>
+<div id="apDiv46"><img src="demares web imagenes/triangulo.png" width="20" height="23" /></div>
+<div id="apDiv50"><script src="http://www.jotform.com/min/g=jotform&3.1.5" type="text/javascript"></script>
+<script type="text/javascript">
+   JotForm.init();
+</script>
+<link type="text/css" rel="stylesheet" href="http://www.jotform.com/css/styles/form.css?v3.1.5"/>
+<link href="http://www.jotform.com/css/calendarview.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+    .form-label{
+        width:150px !important;
+    }
+    .form-label-left{
+        width:150px !important;
+    }
+    .form-line{
+        padding:10px;
+    }
+    .form-label-right{
+        width:150px !important;
+    }
+    .form-all{
+        width:690px;
+        color:Black !important;
+        font-family:Verdana;
+        font-size:12px;
+    }
+</style>
+
+<form class="jotform-form" action="http://www.jotform.com/submit.php" method="post" name="form_2853422877" id="2853422877" accept-charset="utf-8">
+    <input type="hidden" name="formID" value="2853422877" />
+    <div class="form-all">
+        <ul class="form-section">
+            <li class="form-line" id="id_3">
+                <label class="form-label-left" id="label_3" for="input_3"> Tratamiento: </label>
+                <div id="cid_3" class="form-input">
+                    <select class="form-dropdown" style="width:100px" id="input_3" name="q3_tratamiento">
+                        <option>  </option>
+                        <option value="Sr. "> Sr. </option>
+                        <option value="Sra."> Sra. </option>
+                        <option value="Empresa"> Empresa </option>
+                    </select>
+                </div>
+            </li>
+            <li class="form-line" id="id_4">
+                <label class="form-label-left" id="label_4" for="input_4"> Nombre: </label>
+                <div id="cid_4" class="form-input">
+                    <input type="text" class="form-textbox" id="input_4" name="q4_nombre4" size="13" />
+                </div>
+            </li>
+            <li class="form-line" id="id_5">
+                <label class="form-label-left" id="label_5" for="input_5"> Apellidos: </label>
+                <div id="cid_5" class="form-input">
+                    <input type="text" class="form-textbox" id="input_5" name="q5_apellidos" size="15" />
+                </div>
+            </li>
+            <li class="form-line" id="id_6">
+                <label class="form-label-left" id="label_6" for="input_6"> Empresa: </label>
+                <div id="cid_6" class="form-input">
+                    <input type="text" class="form-textbox" id="input_6" name="q6_empresa" size="15" />
+                </div>
+            </li>
+            <li class="form-line" id="id_7">
+                <label class="form-label-left" id="label_7" for="input_7"> Teléfono: </label>
+                <div id="cid_7" class="form-input">
+                    <input type="text" class="form-textbox" id="input_7" name="q7_telefono" size="15" />
+                </div>
+            </li>
+            <li class="form-line" id="id_8">
+                <label class="form-label-left" id="label_8" for="input_8"> E- mail: </label>
+                <div id="cid_8" class="form-input">
+                    <input type="text" class="form-textbox" id="input_8" name="q8_eMail" size="15" />
+                </div>
+            </li>
+            <li class="form-line" id="id_9">
+                <label class="form-label-left" id="label_9" for="input_9"> Consulta para: </label>
+                <div id="cid_9" class="form-input">
+                    <select class="form-dropdown" style="width:100px" id="input_9" name="q9_consultaPara">
+                        <option>  </option>
+                        <option value="Servicios "> Servicios </option>
+                        <option value="Gerencia "> Gerencia </option>
+                        <option value="Otros"> Otros </option>
+                    </select>
+                </div>
+            </li>
+            <li class="form-line form-line-column" id="id_10">
+                <label class="form-label-top" id="label_10" for="input_10"> Asunto: </label>
+                <div id="cid_10" class="form-input-wide">
+                    <textarea id="input_10" class="form-textarea" name="q10_asunto10" cols="33" rows="6"></textarea>
+                </div>
+            </li>
+            <li class="form-line" id="id_2">
+                <div id="cid_2" class="form-input-wide">
+                    <div style="text-align:left" class="form-buttons-wrapper">
+                        <button id="input_2" type="submit" class="form-submit-button">
+                            Enviar a Grupo Demarescsi
+                        </button>
+                    </div>
+                </div>
+            </li>
+            <li style="display:none">
+                Should be Empty:
+                <input type="text" name="website" value="" />
+            </li>
+        </ul>
+    </div>
+    <input type="hidden" id="simple_spc" name="simple_spc" value="2853422877" />
+    <script type="text/javascript">
+        document.getElementById("si" + "mple" + "_spc").value = "2853422877-2853422877";
+    </script>
+</form></div>
+<div id="apDiv51"><font color="#009900" face="Century Gothic" size="6"><B>OFICINAS</B></font></div>
+<div id="apDiv52"><img src="demares web imagenes/LINEA-VERDE.png" width="18" height="500" /></div>
+<div id="apDiv53"><img src="demares web imagenes/linea-gris-delgada.png" width="290" height="30" /></div>
+<script type="text/javascript">
+<!--
+swfobject.registerObject("FlashID");
+//-->
+</script>
+</body>
+</html>
+
+
